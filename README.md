@@ -45,9 +45,16 @@ This project demonstrates setting up a scalable and highly available web applica
 ### 5. **Deploy Application**
 - Install a basic HTML page on each private instance:
   
- **Connect via Bastion Host to the privTE instance and install the web application**
-   - Used the following to connect to private instances:.  
-   - First ssh to the Bastion Host Instance
+ **Connect via Bastion Host to the private instance and install the web application**
+   - Used the following to connect to private instances:.
+   - First Upload the Key File to AWS CloudShell
+   - Then upload it to the Baston Host Instance to allo the  Baston Host to ssh to the private instances using the same key
+
+     ```sh
+     ssh -i my-key.pem ec2-user@bastion-public-ip
+     ```
+
+   - Then ssh to the Bastion Host Instance
      ```sh
      ssh -i my-key.pem ec2-user@bastion-public-ip
      ```
