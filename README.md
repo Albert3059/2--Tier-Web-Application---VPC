@@ -51,7 +51,7 @@ This project demonstrates setting up a scalable and highly available web applica
    - Then upload it to the Baston Host Instance to allo the  Baston Host to ssh to the private instances using the same key
 
      ```sh
-     ssh -i my-key.pem ec2-user@bastion-public-ip
+     scp -i ~/4MyInstances.pem ~/4MyInstances.pem ubuntu@52.204.199.123:/home/ubuntu/
      ```
 
    - Then ssh to the Bastion Host Instance
