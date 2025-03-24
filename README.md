@@ -17,10 +17,8 @@ This project demonstrates setting up a scalable and highly available web applica
 10. **Bastion Host** - Provides SSH access to private instances.
 
 ## Architecture Diagram
-```
-2--Tier-Web-Application---VPC.drawio.png
+![image](https://github.com/user-attachments/assets/94e1f88e-4191-471e-ba36-77e1620a0f3a)
 
-```
 
 ## Setup Steps
 
@@ -46,7 +44,7 @@ This project demonstrates setting up a scalable and highly available web applica
 
 ### 5. **Deploy Application**
 - Install a basic HTML page on each private instance:
-- 
+  
  **Connect via Bastion Host to the privTE instance and install the web application**
    - Used the following to connect to private instances:.  
    - First ssh to the Bastion Host Instance
