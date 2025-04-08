@@ -126,3 +126,5 @@ python3 -m http.server 8000
 ## Conclusion
 This setup allows an auto-scaling web application with high availability and secure access. The **Application Load Balancer** ensures smooth traffic distribution, while the **Bastion Host** secures instance access.
 
+https://harsh05.medium.com/mastering-aws-auto-scaling-groups-asg-a-comprehensive-guide-984f0b6b9bb0
+
