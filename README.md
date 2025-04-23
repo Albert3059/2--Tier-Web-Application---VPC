@@ -47,11 +47,11 @@ This project demonstrates setting up a scalable and highly available web applica
   
  **Connect via Bastion Host to the private instance and install the web application**
    - Used the following to connect to private instances:.
-   - First Upload the Key File to AWS CloudShell
-   - Then upload it to the Baston Host Instance to allo the  Baston Host to ssh to the private instances using the same key
+   - First Open Command Prompt or PowerShell on Windows to  copy the .pem file from your Windows machine to the EC2 instance
+   - Then upload it to the Baston Host Instance to allow the  Baston Host to ssh to the private instances using the same key
 
      ```sh
-     scp -i ~/myKey.pem ~/myKey.pem ubuntu@publicIP:/home/ubuntu/
+     scp -i "C:\Users\T\Documents\AWSKeyPair\pen.pem" "C:\Users\T\Documents\AWSKeyPair\pem.pem" ubuntu@publicIP:/home/ubuntu/
      ```
 
    - Then ssh to the Bastion Host Instance
